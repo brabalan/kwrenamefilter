@@ -11,4 +11,6 @@ class CoqUTFFilter(Filter):
         for ttype, value in stream:
 	    if ttype is Keyword and value == 'forall':
 	        value = value.replace('forall',u'∀')
+            elif ttype is Keyword and value == 'exists':
+	        value = value.replace('exists',u'∃')
             yield ttype, value
