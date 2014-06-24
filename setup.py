@@ -9,7 +9,7 @@ from setuptools import setup
 
 entry_points = """
 [pygments.filters]
-CoqKwFilter = utf8CoqFilter.utf8CoqFilter:CoqUTFFilter
+coqkwfilter = utf8CoqFilter.utf8CoqFilter:CoqUTFFilter
 """
 
 setup(name = 'coqkwfilter',
