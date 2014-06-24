@@ -2,19 +2,19 @@
 # -*- encoding: utf-8 -*-
 
 """
-UTF8 Coq keyword translation filter for Pygments.
+keyword rename filter for Pygments.
 """
 
 from setuptools import setup
 
 entry_points = """
 [pygments.filters]
-coqkwfilter = utf8CoqFilter:CoqUTFFilter
+kwrenamefilter = KeywordRename:KWRenameFilter
 """
 
-setup(name = 'coqkwfilter',
+setup(name = 'kwrenamefilter',
   version  = '0.1',
   description  = __doc__,
   author       = "Alan Schmitt",
-  packages     = ['utf8CoqFilter'],
+  packages     = ['KeywordRename'],
   entry_points = entry_points)

@@ -2,7 +2,7 @@
 from pygments.token import Keyword
 from pygments.filter import Filter
 
-class CoqUTFFilter(Filter):
+class KWRenameFilter(Filter):
 
     def __init__(self, **options):
         Filter.__init__(self, **options)
