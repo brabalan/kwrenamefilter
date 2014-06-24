@@ -4,7 +4,7 @@ from pygments.token import Operator
 from pygments.filter import Filter
 
 class KWRenameFilter(Filter):
-    transdict = {'forall' : u'∀', 'exists' : u'∃', '=>' : u'⇒'}
+    transdict = {'forall' : u'∀', 'exists' : u'∃', '->' : u'→', '~' : u'¬', '<->' : u'↔', '=>' : u'⇒'}
 
     def __init__(self, **options):
         Filter.__init__(self, **options)
