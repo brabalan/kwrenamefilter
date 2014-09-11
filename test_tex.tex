@@ -1,0 +1,16 @@
+\documentclass[11pt]{article}
+\usepackage{minted}
+\usemintedstyle{emacs}
+\makeatletter
+\minted@define@switch{kwrename}{-F kwrenamefilter}
+\makeatother
+
+\begin{document}
+
+This is a test of the filter.
+
+\begin{minted}[kwrename]{coq}
+Lemma foo : forall x, x -> x.
+\end{minted}
+
+\end{document}

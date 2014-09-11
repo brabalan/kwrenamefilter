@@ -1,0 +1,13 @@
+#+options: toc:nil
+
+#+LaTeX_HEADER: \usepackage{minted}
+#+LaTeX_HEADER: \usemintedstyle{emacs}
+
+#+LaTeX_HEADER: \makeatletter \minted@define@switch{kwrename}{-F kwrenamefilter} \makeatother
+
+This is a test of the filter.
+
+#+attr_latex: :options kwrename=true
+#+begin_src coq
+Lemma foo : forall x, x -> x.
+#+end_src
