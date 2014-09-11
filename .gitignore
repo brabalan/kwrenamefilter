@@ -1,3 +1,9 @@
 build
 *.egg-info
 setup.cfg
+auto
+*.aux
+*.log
+*.out
+test.pdf
+test.tex
