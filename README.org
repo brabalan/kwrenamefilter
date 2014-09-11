@@ -1,0 +1,3 @@
+Install with =easy-install .=.
+
+Test with =pygmentize -F kwrenamefilter test.v=.
