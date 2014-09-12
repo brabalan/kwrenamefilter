@@ -1,3 +1,5 @@
 Install with =easy-install .=.
 
 Test with =pygmentize -F kwrenamefilter test.v=.
+
+To use with minted, you need the version from git if you want output in utf8.

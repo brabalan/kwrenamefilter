@@ -1,11 +1,15 @@
 #+options: toc:nil
 
+#+LaTeX_HEADER: \usepackage{newunicodechar}
+#+LaTeX_HEADER: \newunicodechar{∀}{$\forall$}
+#+LaTeX_HEADER: \newunicodechar{→}{$\rightarrow$}
 #+LaTeX_HEADER: \usepackage{minted}
 #+LaTeX_HEADER: \usemintedstyle{emacs}
+#+LaTeX_HEADER: \setminted{encoding=utf8}
 
 #+LaTeX_HEADER: \makeatletter \minted@define@switch{kwrename}{-F kwrenamefilter} \makeatother
 
-This is a test of the filter.
+This is a test of the filter, from org mode.
 
 #+attr_latex: :options kwrename=true
 #+begin_src coq
