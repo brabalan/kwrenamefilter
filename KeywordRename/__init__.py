@@ -11,7 +11,7 @@ class KWRenameFilter(Filter):
 
     def filter(self, lexer, stream):
         for ttype, value in stream:
-            v = value.__str__()
+            v = value.encode('utf-8').__str__()
 	    if (ttype is Keyword or ttype is Operator) and v in self.transdict:
 	        value = value.replace(v,self.transdict[v])
             yield ttype, value
