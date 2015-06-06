@@ -3,3 +3,7 @@ Install with =easy-install .=.
 Test with =pygmentize -F kwrenamefilter test.v=.
 
 To use with minted, you need the version from git if you want output in utf8.
+
+You can test xelatex with the file ~test_tex.tex~, compiled
+using =xelatex --shell-escape test_tex=. The file ~test_pdftex.tex~ shows an
+example for pdflatex, to be compiled with =pdflatex --shell-escape test_pdftex=.

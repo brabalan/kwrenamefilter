@@ -1,0 +1,21 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{newunicodechar}
+\newunicodechar{∀}{$\forall$}
+\newunicodechar{→}{$\rightarrow$}
+\usepackage{minted}
+\usemintedstyle{emacs}
+\setminted{encoding=utf8}
+\makeatletter
+\minted@define@switch{kwrename}{-F kwrenamefilter}
+\makeatother
+
+\begin{document}
+
+This is a test of the filter.
+
+\begin{minted}[kwrename]{coq}
+Lemma foo : forall x, x -> x.
+\end{minted}
+
+\end{document}
